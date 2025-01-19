@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", Arial;
+}
+
+:root {
+    /* Colors */
+
+
+    /* Rose */
+    --rose-800: #7a284e;
+    --rose-50: #fff7fb;
+
+    /* Stone */
+    --stone-900: #312e2c;
+    --stone-600: #5f564d;
+    --stone-150: #e3ddd7;
+    --stone-100: #f3e5d7;
+
+    /* brown */
+    --brown-800: #854632;
+
+    /* White */
+    --white: #fff;
+}
+
+body {
+    background-color: var(--stone-100);
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 616px;
+        padding: 40px;
+        margin: 128px 48px;
+        border-radius: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 736px;
+    }
+}
+
+.list {
+    list-style-position: inside;
+}
+
+.list-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+/* Typografy */
+
+.font-young {
+    font-family: "Young Serif", serif;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-weight: 400;
+}
+
+.text-preset-1 {
+    font-size: 40px;
+}
+
+.text-preset-2 {
+    font-size: 28px;
+    color: var(--brown-800);
+}
+
+.font-outfit {
+    font-family: "Outfit", serif;
+    letter-spacing: 0px;
+    color: var(--stone-600);
+}
+
+.text-preset-3 {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.text-preset-4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.text-preset-4-bold {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.container {
+    width: 100%;
+    background-color: var(--white);
+}
+
+/* Img  */
+
+.img-omelette {
+    background: url(../assets/images/image-omelette.jpeg) no-repeat center / cover ;
+    width: 100%;
+    height: 171px;
+}
+
+@media screen and (min-width: 768px)  {
+    .img-omelette{
+        height: 300px;
+        border-radius: var(--spacing-150, 12px);
+    }
+}
+
+/* Content */
+.content {
+    padding: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    .content{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.time {
+    background-color: var(--rose-50);
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.time .title-time {
+    color: var(--rose-800);
+}
+
+::marker { /* para mudar a cor da bolinha da lista */
+    color: var(--rose-800);
+    font-family: "Outfit", serif;
+    font-weight: bold;
+}
+
+.ingredients, .instructions {
+    margin: 30px 0;
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nutrition .table-nutri {
+    border-collapse: collapse;
+}
+
+.nutrition .table-nutri tr td{
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition .table-nutri tr .nutri-description {
+    padding-left: 45px;
+}
+
+.nutrition .table-nutri tr .nutri-quantity {
+    color: var(--brown-800);
+}
